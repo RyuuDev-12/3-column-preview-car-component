@@ -1,0 +1,110 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.item p, .item h2, .item a{
+  color:  white;
+  margin: 0 40px;
+}
+
+img{
+  margin: 0 0 40px 40px;
+  display: block;
+  width: 100%;
+  max-width: 80px;
+}
+
+p{
+  font-family: Lexend Deca;
+  display: block;
+  line-height: 30px;
+}
+
+h2{
+  font-family: Big Shoulders Display;
+  font-size: 40px;
+  display: block;
+}
+
+.item a{
+  display: inline-block;
+  font-family: Lexend Deca;
+  padding: 30px 50px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 20px 40px;
+  margin-left: 40px;
+}
+
+.container{
+  max-width: 70vw;
+  width: 100%;
+  margin: 50px auto 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.part1{
+  background-color: #e38826;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.part2{
+  background-color: #006970;
+}
+
+.part3{
+  background-color: #004241;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.part1{
+  color: #e38826;
+}
+
+.part2{
+  color: #006970;
+}
+
+.part3{
+  color: #004241;
+}
+
+.item a:hover{
+  background-color: transparent;
+  color: white;
+  transition: .3s;
+}
+
+.item a{
+  margin-top: 80px;
+  color: currentColor;
+  background-color: white;
+}
+
+.item{
+  padding-top: 40px;
+  height: 500px;
+}
+
+.attribution{
+  font-family: Lexend Deca;
+}
+
+@media(max-width: 1080px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+  .part1{
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+  .part3{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+}
